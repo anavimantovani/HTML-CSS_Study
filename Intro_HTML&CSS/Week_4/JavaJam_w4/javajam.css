@@ -1,0 +1,161 @@
+body {
+    background-color: #ffffff;
+    color: #221811;
+    font-family: Tahoma, Arial, serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px 7px #221811;
+    }
+
+#filter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    opacity: 0.7;
+    }
+
+.forest{
+    display: block !important;
+    width: 100% !important; 
+    height: auto !important; 
+    }
+
+.mugs{
+    display: block;
+    float: right;
+    margin-left: 10px;
+    width: 100;
+    }
+
+#wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 200px;
+    background-color: #fef6c2;
+    box-sizing: border-box;
+    
+    }
+
+#dark{
+    background-color: #231814;
+}
+
+header {
+    color: #8c3826;
+    background-color: #d2b48c;
+    text-align: center;
+    padding: 10px;
+    }
+
+.text{
+    padding: 20px;
+}
+
+
+h1 {
+    line-height: 200%;
+    text-align: center;
+    color: #231814;
+    }
+
+h2 {
+    color: #8c3826;
+    padding-left: 3em;
+    padding-right: 2em;
+    }
+
+h3 {
+    color: #8c3826;
+    padding-left: 3em;
+    padding-right: 2em;
+    }
+
+h4{
+    background-color: #d2b48c;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 50px;
+    padding-right: 0;
+    font-weight: bold;
+}
+
+p{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+#imagefloat{
+    float: left;
+    
+}
+
+.month{
+    padding-right: 20px;
+    padding-left: 30%;
+    padding-bottom: 40px;
+    
+}
+
+#textmonth{
+    margin-left: 20px;
+    padding-left: 25%;
+}
+
+.onethird {
+    float: left;
+    width: 50%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    }
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:link{
+    color: #fef6c2;
+}
+
+nav a:visited {
+    color: #d2b48c;
+}
+
+nav a:hover{
+    color: #cc9933;
+}
+
+.navbar{
+    float: left;
+    width: 200px;
+    background-color: #231814;
+}
+
+footer {
+    background-color: #d2b48c;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    text-align: center;
+    padding: 10px;
+    }
+
+nav a:link{
+    text-decoration: none;
+}

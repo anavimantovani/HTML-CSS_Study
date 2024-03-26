@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #87C38F;
+  color: #43291F;
+  font-family: Tahoma, Arial, sans-serif;
+  margin: 0;
+}
+#wrapper {
+  
+  background-color: #87C38F;
+  padding: 0;
+}
+header {
+  background-color: #226F54;
+  background-repeat: no-repeat;
+  color: #226F54;
+  height: 128px;
+  padding-left: 105px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #DA2C38;
+}
+header a {
+  text-decoration: none;
+}
+header a:link {
+  color: #87C38F;
+}
+header a:visited {
+  color: #87C38F;
+}
+header a:hover {
+  color: #DA2C38;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  color: #DA2C38;
+}
+h3,
+dt {
+  color: #DA2C38;
+}
+h4 {
+  background-color: #87C38F;
+  font-size: 1.2em;
+  padding-left: 0.5em;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #221811;
+  clear: left;
+}
+nav {
+  text-align: center;
+  font-size: 1.5em;
+  border-right: 2px solid #DA2C38;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:link {
+  color: #226F54;
+}
+nav a:visited {
+  color: #DA2C38;
+}
+nav a:hover {
+  color: #226F54;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  border-bottom: 1px solid #87C38F;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+main {
+  background-color: #F4F0BB;
+  display: block;
+  padding: 0 0 2em 0;
+}
+
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+dl {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+main ul {
+  padding-left: 2em;
+}
+.details {
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: auto;
+}
+
+img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#homehero {
+  height: 300px;
+  background-image: url(road.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#heromugs {
+  height: 400px;
+  background-image: url(threemugs.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#herojobs{
+  height: 300px;
+  background-image: url(christmas.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#heroguitar {
+  height: 00px;
+  background-image: url(eggnod1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#mobile {
+  display: inline;
+}
+#desktop {
+  display: none;
+}
+footer {
+  background-color: #226F54;
+  font-size: 0.6em;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 1em;
+  border-top: 4px solid #DA2C38;
+}
+
+table{
+  width: 300px;
+  padding-left: 30px;
+  margin: auto;
+  border-spacing: 0;
+  background-color: #87C38F;
+  border: 2px solid #DA2C38;
+}
+
+th,td{
+  padding: 10px;
+}
+
+form{ padding: 2em;}
+label{float: left; display: block; text-align: right; width: 8em; padding-right: 1em;}
+input, textarea{display: block; margin-bottom: 1em;}
+#mySubmit{margin-left: 9.5em; margin-right: 9.5em;}
+
+
+@media (min-width: 600px) {
+  header {
+    padding-left: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  nav ul {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  nav li {
+    border-bottom: none;
+  }
+  #homehero {
+    background-image: url(christmas.jpg);
+    height: 50vh;
+  }
+  #heromugs {
+    background-image: url(gingerbread.jpg);
+  }
+  #herojobs{
+    background-image: url(christmas.jpg);
+  }
+  #heroguitar {
+    background-image: url(eggnod1.jpg);
+  }
+  #flow {
+    display: flex;
+    flex-direction: row;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: inline;
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+  }
+  h4 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  @supports (display: grid) {
+    header {
+      grid-area: header;
+    }
+    nav {
+      grid-area: nav;
+    }
+    main {
+      grid-area: main;
+    }
+    footer {
+      grid-area: footer;
+    }
+    #wrapper {
+      display: grid;
+      grid-template:
+        "header header"
+        "nav    main"
+        "footer footer"
+        / 200px;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+  }
+}
